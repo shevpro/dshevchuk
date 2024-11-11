@@ -1,5 +1,6 @@
 <script setup>
 import WelcomeSection from '../components/share/Welcome.vue';
+import ServicesSection from '../components/share/Services.vue';
 import ExperienceSection from '../components/share/Experience.vue';
 import ContactsSection from '../components/share/Contacts.vue';
 </script>
@@ -7,6 +8,7 @@ import ContactsSection from '../components/share/Contacts.vue';
 <template>
     <div class="home-page">
         <WelcomeSection />
+        <ServicesSection />
         <ExperienceSection />
         <ContactsSection />
     </div>
