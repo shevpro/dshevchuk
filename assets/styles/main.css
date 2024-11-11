@@ -17,6 +17,11 @@ body {
     background-color: var(--bg-body);
 }
 
+*, :after, :before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .container {
     width: 1280px;
     margin: 0 auto;
