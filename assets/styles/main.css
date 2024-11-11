@@ -1,0 +1,42 @@
+:root {
+    --bg-body: #fff;
+    --black-color: #000;
+    --gray-color: #d1d1d1;
+}
+
+body {
+    font-family: -apple-system, Roboto, Arial, sans-serif;
+    position: relative;
+    margin: 0;
+    width: 100vw;
+    min-width: 320px;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--black-color);
+    background-color: var(--bg-body);
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+@media (max-width: 1280px) {
+    .container {
+      width: 960px;
+    }
+  }
+  
+  @media (max-width: 960px) {
+    .container {
+      width: 640px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .container {
+      width: 100%;
+    }
+  }
