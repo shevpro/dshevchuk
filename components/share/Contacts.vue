@@ -7,6 +7,7 @@
             <div class="contacts-list">
                 <a href="mailto:shevchuk.pro@yandex.ru" target="_blank" class="contacts-list__link">Email</a>
                 <a href="https://t.me/dshevchuk_dev" target="_blank" class="contacts-list__link">Telegram</a>
+                <a href="https://github.com/shevpro" target="_blank" class="contacts-list__link">GitHub</a>
             </div>
         </div>
     </section>
