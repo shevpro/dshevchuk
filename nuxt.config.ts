@@ -15,7 +15,7 @@ export default defineNuxtConfig({
         { property: 'twitter:card', content: 'summary_large_image' },
         { property: 'twitter:url', content: 'https://www.dshevchuk.me' },
         { property: 'twitter:title', content: 'Дмитрий Шевчук | Front-end developer' },
-        { property: 'twitter:title', content: 'В рабзработке с 2012 года. За это время успел поработать в заказной разработке и в продуктовых компаниях.' },
+        { property: 'twitter:description', content: 'В рабзработке с 2012 года. За это время успел поработать в заказной разработке и в продуктовых компаниях.' },
       ],
       link: [
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,700&display=swap' }
@@ -35,5 +35,8 @@ export default defineNuxtConfig({
   yandexMetrika: {
     id: '98890348',
     webvisor: true,
+    clickmap: true,
+    trackLinks: true,
+    accurateTrackBounce: true,
   }
 })
