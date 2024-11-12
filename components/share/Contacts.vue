@@ -3,7 +3,6 @@
 <template>
     <section class="contacts">
         <div class="container">
-            <h3>Контакты</h3>
             <div class="contacts-list">
                 <a href="mailto:shevchuk.pro@yandex.ru" target="_blank" class="contacts-list__link">Email</a>
                 <a href="https://t.me/dshevchuk_dev" target="_blank" class="contacts-list__link">Telegram</a>
@@ -14,15 +13,21 @@
 </template>
 
 <style>
+.contacts {
+    position: sticky;
+    bottom: 0;
+    padding: 40px 0;
+}
+
 .contacts-list .contacts-list__link {
     display: block;
-    color: var(--gray-color);
+    color: #8e8e8e;
     text-decoration: none;
     font-weight: 600;
     font-size: 56px;
 }
 
 .contacts-list .contacts-list__link:hover {
-    color: #000;
+    color: #2c39f2;
 }
 </style>

@@ -8,12 +8,12 @@
                 <div class="services-list__item">
                     <h4>Вёрстка</h4>
                     <p>Создание компонентов, интерфейсов и страниц на html/css/js</p>
-                    <div>1 800 р/час</div>
+                    <div><b>1 800</b> р/час</div>
                 </div>
                 <div class="services-list__item">
                     <h4>Фронтенд на Vue</h4>
                     <p>Сбор сложных интерфейсов на Nuxt.js — самого популярного фреймворка на Vue.js</p>
-                    <div>2 400 р/час</div>
+                    <div><b>2 400</b> р/час</div>
                 </div>
             </div>
             <div class="services__action">
@@ -24,6 +24,13 @@
 </template>
 
 <style>
+.services {
+    position: relative;
+    z-index: 1;
+    padding: 40px 0;
+    background-color: #fff;
+}
+
 .services .services-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -38,8 +45,7 @@
 
 .services-list .services-list__item {
     padding: 16px;
-    border-radius: 10px;
-    background-color: #f5f5f5;
+    border: 1px solid #dedede;
 }
 
 .services-list__item h4 {
@@ -59,12 +65,15 @@
     line-height: 18px;
     font-weight: 600;
     text-decoration: none;
-    background-image: linear-gradient(to right, #FFB147, #FF6C63, #B86ADF);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+    color: #fff;
+    background-color: #2c39f2;
     padding: 16px 30px;
-    border-radius: 10px;
-    border: 1px solid #B86ADF;
+    border: 2px solid transparent;
+}
+
+.services__action a:hover {
+    color: #2c39f2;
+    border: 2px solid #2c39f2;
+    background-color: #fff;
 }
 </style>

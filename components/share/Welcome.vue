@@ -25,6 +25,19 @@ import StackSection from './Stack.vue';
 </template>
  
 <style>
+.welcome {
+    position: relative;
+    z-index: 1;
+    padding: 80px 0 40px;
+    background-color: #fff;
+}
+
+@media (max-width: 1280px) {
+    .welcome {
+        padding-top: 40px;
+    }
+}
+
 .profile {
     display: grid;
     grid-template-columns: 430px 1fr;
@@ -33,10 +46,12 @@ import StackSection from './Stack.vue';
 @media (max-width: 1280px) {
     .profile {
         grid-template-columns: 1fr;
+        padding-top: 40px;
     }
 }
 
 .profile .profile-avatar {
+    position: relative;
     overflow: hidden;
     width: 340px;
     height: 340px;
@@ -44,7 +59,19 @@ import StackSection from './Stack.vue';
     margin-bottom: 32px;
     user-select: none;
     pointer-events: none;
+    border: 3px solid #2c39f2;
     background-color: #f5f5f5;
+}
+
+.profile-avatar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border: 4px solid #fff;
 }
 
 @media (max-width: 960px) {
@@ -63,10 +90,6 @@ import StackSection from './Stack.vue';
     line-height: 48px;
     font-weight: 600;
     margin-bottom: 16px;
-    background-image: linear-gradient(to right, #FFB147, #FF7E5C, #FF6C63, #B86ADF);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
 }
 
 @media (max-width: 640px) {

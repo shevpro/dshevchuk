@@ -19,6 +19,15 @@ import Jobs from '../../data/jobs';
 </template>
 
 <style>
+.experience {
+    position: relative;
+    padding: 40px 0;
+    z-index: 1;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: #fff;
+}
+
 .experience-table .experience-table__row {
     position: relative;
     display: flex;
@@ -41,10 +50,7 @@ import Jobs from '../../data/jobs';
 }
 
 .experience-table__row:hover .experience-company {
-    background-image: linear-gradient(to right, #FFB147, #FF6C63, #B86ADF);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+    color: #2c39f2;
 }
 
 .experience-table .experience-link {
@@ -57,7 +63,7 @@ import Jobs from '../../data/jobs';
 }
 
 .experience-table .experience-link:hover {
-    color: var(--black-color);
+    color: #2c39f2;
 }
 
 .experience-table .experience-link:after {

@@ -18,15 +18,7 @@ import ContactsSection from '../components/share/Contacts.vue';
 .home-page {
     display: flex;
     flex-direction: column;
-    gap: 80px;
-    padding: 80px 0;
     min-height: 100vh;
-}
-
-@media (max-width: 640px) {
-    .home-page {
-        gap: 40px;
-        padding: 40px 0;
-    }
+    background-color: #f9f9f9;
 }
 </style>
