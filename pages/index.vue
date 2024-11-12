@@ -7,9 +7,11 @@ import ContactsSection from '../components/share/Contacts.vue';
 
 <template>
     <div class="home-page">
-        <WelcomeSection />
-        <ServicesSection />
-        <ExperienceSection />
+        <div class="home-page__main">
+            <WelcomeSection />
+            <ServicesSection />
+            <ExperienceSection />
+        </div>
         <ContactsSection />
     </div>
 </template>
@@ -20,5 +22,10 @@ import ContactsSection from '../components/share/Contacts.vue';
     flex-direction: column;
     min-height: 100vh;
     background-color: #f9f9f9;
+}
+
+.home-page .home-page__main {
+    position: relative;
+    z-index: 2;
 }
 </style>
